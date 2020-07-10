@@ -1,0 +1,87 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverName": {
+        "type": "string",
+        "metadata": {
+            "description": "The name of the SQL logical server."
+        }
+        },
+        "databaseName": {
+            "type": "string",
+            "metadata": {
+              "description": "The name of the SQL database."
+            }
+        },
+        "location": {
+        "type": "string",
+        "defaultValue": "East US",
+        "metadata": {
+            "description": "Location for all resources."
+        }
+        },
+        "administratorLogin": {
+        "type": "string",
+        "metadata": {
+            "description": "The administrator username of the SQL logical server."
+        }
+        },
+        "administratorLoginPassword": {
+        "type": "securestring",
+        "metadata": {
+            "description": "The administrator password of the SQL logical server."
+        }
+        }
+            
+    },
+    "variables": {
+        "databaseCollation": "SQL_Latin1_General_CP1_CI_AS"
+      },
+    "resources": [
+        {
+            "name": "[parameters('serverName')]",
+            "type": "Microsoft.Sql/servers",
+            "apiVersion": "2019-06-01-preview",
+            "location": "[parameters('location')]",
+            "properties": {
+              "administratorLogin": "[parameters('administratorLogin')]",
+              "administratorLoginPassword": "[parameters('administratorLoginPassword')]",
+              "version": "12.0"
+            },
+            "resources": [
+                {
+                    "name": "[parameters('databaseName')]",
+                    "type": "databases",
+                    "apiVersion": "2019-06-01-preview",
+                    "location": "[parameters('location')]",
+                    "sku": {
+                        "name": "Basic",
+                        "tier": "Basic",
+                        "capacity": 5
+                    },
+                    "properties": {
+                        "collation": "[variables('databaseCollation')]"
+                    },
+                    "dependsOn": [
+                    "[parameters('serverName')]"
+                    ]
+                },
+                {
+                    "name": "AllowAllMicrosoftAzureIps",
+                    "type": "firewallrules",
+                    "apiVersion": "2015-05-01-preview",
+                    "location": "[parameters('location')]",
+                    "properties": {
+                        "endIpAddress": "0.0.0.0",
+                        "startIpAddress": "0.0.0.0"
+                    },
+                    "dependsOn": [
+                        "[parameters('serverName')]"
+                    ]
+                }
+            ]
+        
+        }
+    ]
+}
