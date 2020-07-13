@@ -5,11 +5,13 @@
 
 #### To be provided:
 1. Resource Group
-2. Option (Yes or No) to deploy or not to deploy SQL Server, SQL Database and SQL sink within the pipeline.
+2. Data Factory Name
 3. Storage Account Name
-4. Data Factory Name
+4. Option (Yes or No) to deploy or not to deploy SQL Server, SQL Database and SQL sink within the pipeline.
 5. SQL Server Name (If selected 'Yes')
 6. SQL Database Name (If selected 'Yes')
+7. SQL Login Administrator Username (If selected 'Yes').
+8. SQL Login Administrator Password (If selected 'Yes').
 
 **NOTE** - If you go with SQL sink, the name of the table where data is written is _**covid_tracking**_.
 
