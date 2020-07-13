@@ -34,28 +34,28 @@
             "metadata": {
               "description": "The name of the SQL logical server."
             },
-            "defaultValue": "If selected 'Yes'"
+            "defaultValue": "Specify SQL server name if selected 'Yes'"
         },
         "databaseName": {
             "type": "string",
             "metadata": {
               "description": "The name of the SQL database."
             },
-            "defaultValue": "If selected 'Yes'"
+            "defaultValue": "Specify SQL database name if selected 'Yes'"
         },
         "sqlAdministratorLogin": {
             "type": "string",
             "metadata": {
               "description": "The administrator username of the SQL Server."
             },
-            "defaultValue": "If selected 'Yes'"
+            "defaultValue": "Specify administrator username of SQL server if selected 'Yes'"
           },
         "sqlAdministratorLoginPassword": {
             "type": "securestring",
             "metadata": {
               "description": "The administrator password of the SQL Server."
             },
-            "defaultValue": "If selected 'Yes'"
+            "defaultValue": "*********"
           },
         "covid_tracking_britishcolumbia_http_linkedservice_properties_typeProperties_url": {
             "type": "string",
