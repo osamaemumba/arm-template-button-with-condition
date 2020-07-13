@@ -54,7 +54,8 @@
             "type": "securestring",
             "metadata": {
               "description": "The administrator password of the SQL Server."
-            }
+            },
+            "defaultValue": "If selected 'Yes'"
           },
         "covid_tracking_britishcolumbia_http_linkedservice_properties_typeProperties_url": {
             "type": "string",
