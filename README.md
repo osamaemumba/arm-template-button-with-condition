@@ -17,4 +17,9 @@
 
 Click the following button to deploy all the resources.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fosamaemumba%2Farm-template-button-with-condition%2Fmaster%2FbritishColumbia%2Fcomplete_conditional_sql_sink_arm_template.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fosamaemumba%2Farm-template-button-with-condition%2Fmaster%2FbritishColumbia%2Fone_factory_complete_conditional_sql_sink_arm_template.json)
+
+#### Configure Firewall Rule
+After deployment, to access the newly created SQL server from your client IP, configure the firewall rule as described in the following GIF:
+
+
