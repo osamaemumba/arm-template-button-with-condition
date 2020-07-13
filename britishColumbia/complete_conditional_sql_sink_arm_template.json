@@ -6,45 +6,17 @@
             "type": "string",
             "metadata": "Data Factory name"
         },
+        "storageAccountName": {
+            "type": "String",
+            "metadata": {
+                "description": "Name of the Azure storage account that contains the input/output data."
+            }
+        },
         "location": {
             "defaultValue": "East US",
             "type": "String",
             "metadata": {
                 "description": "Location of the data factory. Currently, only East US, East US 2, and West Europe are supported. "
-            }
-        },
-        "serverName": {
-            "type": "string",
-            "metadata": {
-              "description": "The name of the SQL logical server."
-            }
-        },
-        "databaseName": {
-            "type": "string",
-            "metadata": {
-              "description": "The name of the SQL database."
-            }
-        },
-        "sqlAdministratorLogin": {
-            "type": "string",
-            "metadata": {
-              "description": "The administrator username of the SQL Server."
-            }
-          },
-        "sqlAdministratorLoginPassword": {
-            "type": "securestring",
-            "metadata": {
-              "description": "The administrator password of the SQL Server."
-            }
-          },
-        "covid_tracking_britishcolumbia_http_linkedservice_properties_typeProperties_url": {
-            "type": "string",
-            "defaultValue": "http://www.bccdc.ca/"
-        },
-        "storageAccountName": {
-            "type": "String",
-            "metadata": {
-                "description": "Name of the Azure storage account that contains the input/output data."
             }
         },
         "doYouWantToWriteCuratedDataToSQLDatabase": {
@@ -56,6 +28,38 @@
           "metadata": {
               "description": "Specify if you want to write curated data into SQL database."
           }
+        },
+        "serverName": {
+            "type": "string",
+            "metadata": {
+              "description": "The name of the SQL logical server."
+            },
+            "defaultValue": "If selected 'Yes'"
+        },
+        "databaseName": {
+            "type": "string",
+            "metadata": {
+              "description": "The name of the SQL database."
+            },
+            "defaultValue": "If selected 'Yes'"
+        },
+        "sqlAdministratorLogin": {
+            "type": "string",
+            "metadata": {
+              "description": "The administrator username of the SQL Server."
+            },
+            "defaultValue": "If selected 'Yes'"
+          },
+        "sqlAdministratorLoginPassword": {
+            "type": "securestring",
+            "metadata": {
+              "description": "The administrator password of the SQL Server."
+            },
+            "defaultValue": "If selected 'Yes'"
+          },
+        "covid_tracking_britishcolumbia_http_linkedservice_properties_typeProperties_url": {
+            "type": "string",
+            "defaultValue": "http://www.bccdc.ca/"
         }
     },
     "variables": {
