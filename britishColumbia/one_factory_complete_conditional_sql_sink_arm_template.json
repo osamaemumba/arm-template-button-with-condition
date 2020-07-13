@@ -66,7 +66,8 @@
         "factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]",
         "storageAccountId": "[concat(resourceGroup().id,'/providers/Microsoft.Storage/storageAccounts/', parameters('storageAccountName'))]",
         "dataflowWithSqlName": "Transformations_with_SQL_sink",
-        "dataflowWithoutSqlName": "Transformations_without_SQL_sink"
+        "dataflowWithoutSqlName": "Transformations_without_SQL_sink",
+        "databaseCollation": "SQL_Latin1_General_CP1_CI_AS"
 
     },
 
