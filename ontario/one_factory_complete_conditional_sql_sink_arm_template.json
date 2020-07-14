@@ -2312,6 +2312,7 @@
                         }
                     },
                     "dependsOn": [
+                        "[parameters('factoryName')]",
                         "[concat(variables('factoryId'), '/datasets/csv_source_dataset')]",
                         "[concat(variables('factoryId'), '/datasets/csv_sink_dataset')]",
                         "[concat(variables('factoryId'), '/datasets/json_sink_dataset')]",
