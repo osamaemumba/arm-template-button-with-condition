@@ -2287,7 +2287,7 @@
                                 "userProperties": [],
                                 "typeProperties": {
                                     "dataflow": {
-                                        "referenceName": "[variables('dataflowWithouthSqlName')]",
+                                        "referenceName": "[variables('dataflowWithoutSqlName')]",
                                         "type": "DataFlowReference",
                                         "parameters": {
                                             "filename": {
