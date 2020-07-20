@@ -1556,7 +1556,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "DelimitedText",
@@ -1605,7 +1605,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "Json",
@@ -1654,7 +1654,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "Parquet",
@@ -1690,7 +1690,7 @@
                             "type": "LinkedServiceReference"
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "AzureSqlTable",

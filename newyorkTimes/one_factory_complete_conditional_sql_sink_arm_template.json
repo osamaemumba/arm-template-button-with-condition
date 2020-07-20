@@ -225,7 +225,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "Parquet",
@@ -449,7 +449,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "DelimitedText",
@@ -498,7 +498,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "Json",
@@ -535,6 +535,9 @@
                         "linkedServiceName": {
                             "referenceName": "covid_tracking_newyorktimes_sql_linkedservice",
                             "type": "LinkedServiceReference"
+                        },
+                        "folder": {
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "AzureSqlTable",

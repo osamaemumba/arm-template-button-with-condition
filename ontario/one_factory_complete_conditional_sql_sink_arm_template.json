@@ -1874,7 +1874,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "DelimitedText",
@@ -2045,7 +2045,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "Json",
@@ -2094,7 +2094,7 @@
                             }
                         },
                         "folder": {
-                            "name": "Parameterized"
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "Parquet",
@@ -2160,6 +2160,9 @@
                         "linkedServiceName": {
                             "referenceName": "covid_tracking_ontario_sql_linkedservice",
                             "type": "LinkedServiceReference"
+                        },
+                        "folder": {
+                            "name": "Sinks"
                         },
                         "annotations": [],
                         "type": "AzureSqlTable",
